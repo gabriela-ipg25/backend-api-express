@@ -13,7 +13,7 @@ La API permite realizar operaciones CRUD sobre una lista de tareas:
 
 Los datos se almacenan en un archivo externo llamado `data.js`, utilizando un array de objetos, sin necesidad de una base de datos.
 
----
+
 
 # Tecnologías utilizadas
 
@@ -22,7 +22,7 @@ Los datos se almacenan en un archivo externo llamado `data.js`, utilizando un ar
 - JavaScript
 - Postman
 
----
+
 
 # Instalación
 
@@ -44,7 +44,7 @@ cd backend
 npm install
 ```
 
----
+
 
 # Ejecutar el servidor
 
@@ -83,7 +83,7 @@ GET http://localhost:3000/tareas
 ]
 ```
 
----
+
 
 ## POST → Crear tarea
 
@@ -117,7 +117,7 @@ POST http://localhost:3000/tareas
 }
 ```
 
----
+
 
 ## PUT → Actualizar tarea
 
@@ -151,7 +151,7 @@ PUT http://localhost:3000/tareas/2
 }
 ```
 
----
+
 
 ## DELETE → Eliminar tarea
 
@@ -169,7 +169,7 @@ DELETE http://localhost:3000/tareas/2
 }
 ```
 
----
+
 
 # Validaciones
 
@@ -195,9 +195,9 @@ Se incluyen pantallazos de:
 - PUT
 - DELETE
 - Error 400 Bad Request
----
+  
 
----
+
 
 # Evidencias de pruebas
 
@@ -234,7 +234,7 @@ Se incluyen pantallazos de:
 ![Error 400](./img/400.png)
 
 
----
+
 
 # Flujo de la aplicación
 
@@ -248,7 +248,7 @@ El flujo general de la aplicación es el siguiente:
 4. Los datos son obtenidos o modificados en el arreglo definido en `data.js`.
 5. La API devuelve una respuesta en formato JSON junto con un código HTTP correspondiente.
 
----
+
 
 # Componentes principales
 
@@ -276,7 +276,7 @@ También incluye las validaciones y manejo de errores.
 
 Almacena las tareas en un arreglo de objetos. Funciona como una base de datos temporal en memoria.
 
----
+
 
 # Decisiones de diseño
 
