@@ -29,7 +29,7 @@ Los datos se almacenan en un archivo externo llamado `data.js`, utilizando un ar
 ## 1. Clonar el proyecto
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/gabriela-ipg25/backend-api-express.git
 ```
 
 ## 2. Entrar a la carpeta
@@ -232,3 +232,57 @@ Se incluyen pantallazos de:
 ## Error 400 Bad Request
 
 ![Error 400](./img/400.png)
+
+
+---
+
+# Flujo de la aplicación
+
+La aplicación funciona mediante una API RESTful desarrollada con Express.js. El usuario puede realizar solicitudes HTTP utilizando el navegador o Postman para interactuar con las rutas disponibles.
+
+El flujo general de la aplicación es el siguiente:
+
+1. El cliente realiza una petición HTTP (GET, POST, PUT o DELETE).
+2. La solicitud es recibida por el servidor Express en `index.js`.
+3. El archivo `routes.js` procesa la lógica correspondiente según el endpoint solicitado.
+4. Los datos son obtenidos o modificados en el arreglo definido en `data.js`.
+5. La API devuelve una respuesta en formato JSON junto con un código HTTP correspondiente.
+
+---
+
+# Componentes principales
+
+## index.js
+
+Es el archivo principal del servidor. Se encarga de:
+
+* Inicializar Express.
+* Configurar middleware para JSON.
+* Conectar las rutas.
+* Levantar el servidor en el puerto 3000.
+
+## routes.js
+
+Contiene todas las rutas CRUD de la API:
+
+* GET
+* POST
+* PUT
+* DELETE
+
+También incluye las validaciones y manejo de errores.
+
+## data.js
+
+Almacena las tareas en un arreglo de objetos. Funciona como una base de datos temporal en memoria.
+
+---
+
+# Decisiones de diseño
+
+Se decidió utilizar una estructura simple separando el servidor, las rutas y los datos en distintos archivos para mantener el código más sencillo para visualizar.
+
+También se utilizó Express.js por su facilidad para crear APIs RESTful y manejar rutas HTTP de forma sencilla.
+
+
+
